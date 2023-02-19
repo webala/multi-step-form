@@ -1,34 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+/** @format */
+
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+   const [count, setCount] = useState(0);
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+   return (
+      <div className="App">
+         <div className="container">
+            <div className="menu">
+               <div>
+                  <p>1</p>
+               </div>
+               <div>
+                  <p>2</p>
+               </div>
+               <div>
+                  <p>3</p>
+               </div>
+               <div>
+                  <p>4</p>
+               </div>
+            </div>
+            <form action="#" className="personal-info">
+               <div className="heading">
+                  <h1>Personal info</h1>
+                  <p>
+                     Please provide your name, email address and pone number.
+                  </p>
+               </div>
+               <div className="field">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" placeholder="e.g. Stephen King" />
+               </div>
+               <div className="field">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                     type="email"
+                     placeholder="e.g. stephenking@lorem.com"
+                  />
+               </div>
+               <div className="field">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input type="text" placeholder="e.g. +1 234 567 890" />
+               </div>
+            </form>
+            <div className="navigation">
+               <button>Next Step</button>
+            </div>
+         </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+   );
 }
 
-export default App
+export default App;
