@@ -1,0 +1,51 @@
+/** @format */
+
+.personal-info {
+   width: 80%;
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   position: relative;
+   bottom: 80px;
+
+   .heading {
+      margin-bottom: 30px;
+
+      h1 {
+         margin-bottom: 10px;
+         color: hsl(213, 96%, 18%);
+      }
+
+      p {
+         opacity: 0.5;
+      }
+   }
+
+   .field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+
+      .input-info {
+         display: flex;
+         justify-content: space-between;
+
+         label {
+            color: hsl(213, 96%, 18%);
+            margin-bottom: 3px;
+         }
+      }
+
+      input {
+         height: 40px;
+         border-radius: 5px;
+         border: 1px solid gray;
+         padding: 2px;
+      }
+
+      input:focus {
+         outline-width: 1px;
+         outline-color: hsl(243, 100%, 62%);
+      }
+   }
+}
